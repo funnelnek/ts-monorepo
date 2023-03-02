@@ -13,6 +13,10 @@
             "path": "packages/libs/i18n"
         },
         {
+            "name": "ui",
+            "path": "packages/libs/ui"
+        },
+        {
             "name": "repo",
             "path": ".",
             "jest.disabledWorkspaceFolders": [
