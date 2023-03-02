@@ -7,7 +7,10 @@ const config: JestConfigWithTsJest = {
   coverageDirectory: "test/coverage",
   collectCoverage: true,
   cacheDirectory: "test/cache",
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: "./packages" })
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: "./packages" }),
+  transform: {
+    '^.+\\.tsx?$': ["ts-jest", { tsconfig: "tsconfig.spec.json", useESM: true }]
+  }
 };
 
 export default config;

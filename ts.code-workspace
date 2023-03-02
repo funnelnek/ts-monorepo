@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "host",
+            "path": "src"
+        },
+        {
+            "name": "repo",
+            "path": ".",
+            "jest.disabledWorkspaceFolders": [
+                "packages"
+            ]
+        }
+    ]
+}
