@@ -2,5 +2,9 @@
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "paths": {}
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "esm": true
   }
 }

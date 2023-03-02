@@ -1,6 +1,7 @@
 import type { JestConfigWithTsJest } from 'ts-jest';
 import { pathsToModuleNameMapper } from 'ts-jest';
-import { compilerOptions } from './tsconfig.json';
+import { compilerOptions } from './tsconfig.json' assert { type: "json" };
+
 
 const config: JestConfigWithTsJest = {
   verbose: false,
@@ -9,7 +10,7 @@ const config: JestConfigWithTsJest = {
   cacheDirectory: "test/cache",
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: "./packages" }),
   transform: {
-    '^.+\\.tsx?$': ["ts-jest", { tsconfig: "tsconfig.spec.json", useESM: true }]
+    '^.+\\.tsx?$': ["ts-jest", { tsconfig: "tsconfig.spec.json" }]
   }
 };
 
