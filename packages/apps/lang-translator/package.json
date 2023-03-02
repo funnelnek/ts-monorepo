@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@funnelnek/ui": "1.0.0",
+    "@funnelnek/i18n": "1.0.0"
+  }
 }
