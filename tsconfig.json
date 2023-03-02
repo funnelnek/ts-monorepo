@@ -2,8 +2,18 @@
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "paths": {
-      "@funnelnek/i18n": ["packages/libs/i18n/src/*"],
-      "@funnelnek/lang-translator": ["packages/apps/lang-translator/src/*"]
+      "@funnelnek/i18n": [
+        "packages/libs/i18n/src/*",
+        "packages/libs/i18n/src/index.ts"
+      ],
+      "@funnelnek/lang-translator": [
+        "packages/apps/lang-translator/src/*",
+        "packages/apps/lang-translator/src/index.ts"
+      ],
+      "@funnelnek/ui": [
+        "packages/libs/ui/src/*",
+        "packages/libs/ui/src.index.ts"
+      ]
     }
   },
   "ts-node": {

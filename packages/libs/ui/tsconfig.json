@@ -2,16 +2,12 @@
     "extends": "../../../tsconfig.json",
     "compilerOptions": {
         "composite": true,
-        "outDir": "dist",
+        "outDir": "lib",
         "rootDir": "src",
         "jsx": "react"
     },
     "include": [
         "src/**/*.ts",
         "src/**/*.tsx"
-    ],
-    "references": [
-        { "path": "../../libs/i18n/tsconfig.build.json" },
-        { "path": "../../libs/ui/tsconfig.build.json" }
     ]
 }
