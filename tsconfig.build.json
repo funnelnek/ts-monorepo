@@ -36,5 +36,7 @@
         "**/jest.config.ts"
     ],
     "references": [
+        { "path": "packages/libs/i18n/tsconfig.build.json" },
+        { "path": "packages/apps/lang-translator/tsconfig.build.json" },
     ]
 }

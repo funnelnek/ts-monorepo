@@ -5,6 +5,14 @@
             "path": "src"
         },
         {
+            "name": "lang-translator",
+            "path": "packages/apps/lang-translator"
+        },
+        {
+            "name": "i18n",
+            "path": "packages/libs/i18n"
+        },
+        {
             "name": "repo",
             "path": ".",
             "jest.disabledWorkspaceFolders": [

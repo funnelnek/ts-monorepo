@@ -1,7 +1,10 @@
 {
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "paths": {}
+    "paths": {
+      "@funnelnek/i18n": ["packages/libs/i18n/src/*"],
+      "@funnelnek/lang-translator": ["packages/apps/lang-translator/src/*"]
+    }
   },
   "ts-node": {
     "require": ["tsconfig-paths/register"],
