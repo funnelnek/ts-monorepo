@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "ES2020",
+        "moduleResolution": "node",
+        "composite": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "baseUrl": "./packages",
+        "strict": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "declarationMap": false,
+        "declarationDir": "dist/@types",
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "isolatedModules": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "<outDir>",
+        "**/*.spec.ts",
+        "**/*.test.ts",
+        "**/*.cy.ts",
+        "**/*.cy.tsx",
+        "**/jest.config.ts"
+    ],
+    "references": [
+    ]
+}
