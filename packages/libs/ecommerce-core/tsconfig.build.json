@@ -6,8 +6,5 @@
         "outDir": "lib",
         "declarationDir": "lib/@types"
     },
-    "include": ["src/**/*"],
-    "references": [
-        { "path": "../../libs/ioc/tsconfig.build.json" }
-    ]
+    "include": ["src/**/*"]
 }

@@ -1,0 +1,14 @@
+{
+  "name": "@funnelnek/ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node --loader ts-node/esm ../../../node_modules/.bin/webpack-dev-server --config webpack/development.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

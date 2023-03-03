@@ -3,11 +3,11 @@
     "compilerOptions": {
         "composite": true,
         "rootDir": "src",
-        "outDir": "lib",
+        "outDir": "dist",
         "declarationDir": "lib/@types"
     },
     "include": ["src/**/*"],
     "references": [
-        { "path": "../../libs/ioc/tsconfig.build.json" }
+        { "path": "../../libs/ecommerce-core/tsconfig.build.json" }
     ]
 }

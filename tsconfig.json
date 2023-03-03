@@ -16,10 +16,16 @@
       ],
       "@funnelnek/ioc": [
         "libs/ioc/src/index.ts"
+      ],
+      "@funnelnek/ecommerce": [
+        "libs/ecommerce/src/index.ts"
+      ],
+      "@funnelnek/ecommerce-core": [
+        "libs/ecommerce-core/src/index.ts"
       ]
     }
   },
-  "ts-node": {
+  "ts-node": {    
     "require": ["tsconfig-paths/register"],
     "esm": true
   }

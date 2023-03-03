@@ -17,6 +17,14 @@
             "path": "packages/libs/router"
         },
         {
+            "name": "ecommerce-core",
+            "path": "packages/libs/ecommerce-core"
+        },
+        {
+            "name": "ecommerce",
+            "path": "packages/apps/ecommerce"
+        },
+        {
             "name": "ui",
             "path": "packages/libs/ui"
         },

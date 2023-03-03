@@ -1,0 +1,1 @@
+export type CanActivateFn = () => Promise<boolean> | boolean;

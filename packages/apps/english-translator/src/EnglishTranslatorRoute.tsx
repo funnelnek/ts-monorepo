@@ -5,9 +5,22 @@ import { Scene } from "@funnelnek/ui";
 import { EnglishTranslatorApplication } from "./main";
 
 
-@Route()
+@Route({lazy: true})
 export class EnglishTranslatorRoute implements Routing {
+    readonly id: string = "english-translator";
+    readonly path: string = "";
+
+    constructor(private _children: Routing[]) {
+    }
+
+    get children(): ReactNode[] {
+        return this._children.map(route => route.element);
+    }
+
     get element(): ReactNode {        
-        return <Scene component={EnglishTranslatorApplication} />
+        return (
+            <Scene component={EnglishTranslatorApplication}>                
+            </Scene>
+        );
     }
 }
