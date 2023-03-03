@@ -3,16 +3,16 @@
   "compilerOptions": {
     "paths": {
       "@funnelnek/i18n": [
-        "libs/i18n/src/*",
         "libs/i18n/src/index.ts"
       ],
-      "@funnelnek/lang-translator": [
-        "apps/lang-translator/src/*",
+      "@funnelnek/lang-translator": [        
         "apps/lang-translator/src/index.ts"
       ],
       "@funnelnek/ui": [
-        "libs/ui/src/*",
         "libs/ui/src/index.ts"
+      ],
+      "@funnelnek/router": [
+        "libs/router/src/index.ts"
       ]
     }
   },

@@ -5,19 +5,23 @@
             "path": "src"
         },
         {
-            "name": "lang-translator",
-            "path": "packages/apps/lang-translator"
+            "name": "english-translator",
+            "path": "packages/apps/english-translator"
         },
         {
             "name": "i18n",
             "path": "packages/libs/i18n"
         },
         {
+            "name": "router",
+            "path": "packages/libs/router"
+        },
+        {
             "name": "ui",
             "path": "packages/libs/ui"
         },
         {
-            "name": "repo",
+            "name": "monorepo",
             "path": ".",
             "jest.disabledWorkspaceFolders": [
                 "packages"
