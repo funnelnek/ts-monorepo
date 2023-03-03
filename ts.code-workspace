@@ -21,6 +21,10 @@
             "path": "packages/libs/ui"
         },
         {
+            "name": "ioc",
+            "path": "packages/libs/ioc"
+        },
+        {
             "name": "monorepo",
             "path": ".",
             "jest.disabledWorkspaceFolders": [

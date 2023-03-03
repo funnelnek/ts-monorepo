@@ -13,6 +13,9 @@
       ],
       "@funnelnek/router": [
         "libs/router/src/index.ts"
+      ],
+      "@funnelnek/ioc": [
+        "libs/ioc/src/index.ts"
       ]
     }
   },

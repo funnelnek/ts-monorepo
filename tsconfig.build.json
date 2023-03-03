@@ -38,6 +38,7 @@
     "references": [
         { "path": "packages/libs/i18n/tsconfig.build.json" },
         { "path": "packages/libs/ui/tsconfig.build.json" },
+        { "path": "packages/libs/ioc/tsconfig.build.json" },
         { "path": "packages/libs/router/tsconfig.build.json" },
         { "path": "packages/apps/english-translator/tsconfig.build.json" },
     ]
