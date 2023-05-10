@@ -1,0 +1,20 @@
+{
+    "extends": "../../../tsconfig.json",
+    "compilerOptions": {
+        "composite": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declarationDir": "@types",
+        "jsx": "react"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "references": [
+        { "path": "../../libs/ioc/tsconfig.build.json" },
+        { "path": "../../libs/core/tsconfig.build.json" },
+        { "path": "../discord/tsconfig.build.json" }
+    ],
+    "files": ["@types/remote-mf.d.ts"]
+}

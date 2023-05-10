@@ -1,0 +1,34 @@
+@use "colors" as *;
+@use "fonts" as *;
+
+// Grid Diminsions
+$grid-row: 6rem;
+$grid-column: 6rem;
+$grid-gutter: 2rem;
+$grid-margin: 1.6rem;
+$border-radius: .4rem;
+
+// Input Control
+$input-padding: 1.2rem;
+$input-border-width: .2rem;
+$input-border-height: .2rem;
+$input-border-radius: .4rem;
+$input-border-style: solid;
+$input-label-padding: 0rem .8rem;
+$input-field-margin: 3.2rem;
+$input-transition: .25s ease-in-out;
+
+:root {
+    --grid-row: #{$grid-row};
+    --grid-column: #{$grid-column};
+    --grid-gutter: #{$grid-gutter};
+    --grid-margin: #{$grid-margin};
+    --border-radius: #{$border-radius};
+    --input-padding: #{$input-padding};
+    --input-border-width: #{$input-border-width};
+    --input-border-style: #{$input-border-style};
+    --input-border-radius: #{$input-border-radius};
+    --input-border-height: #{$input-border-height};
+    --input-field-margin: #{$input-field-margin};
+    --input-transition: #{$input-transition};
+}

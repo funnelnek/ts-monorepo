@@ -1,0 +1,45 @@
+.registration {
+    position: relative;
+    width: 100%;
+    max-width: 90rem;
+    min-height: 49rem;
+    padding: 3rem;
+    border-radius: .6rem;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
+
+    header {
+        position: relative;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #333;      
+        margin-bottom: 2rem;  
+
+        &::before  {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -.2rem;
+            width: 2.7rem;
+            height: .3rem;
+            background-color: #4070f4;
+            border-radius: .8rem;
+        }
+    }
+
+    .personal-info {
+        .title {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2.4rem;
+        }
+
+        .fieldset {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}

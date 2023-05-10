@@ -1,0 +1,23 @@
+{
+    "extends": "../../../tsconfig.json",
+    "compilerOptions": {
+        "composite": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "jsx": "react"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "references": [
+        { "path": "core/tsconfig.build.json" },
+        { "path": "server/tsconfig.build.json" },
+        { "path": "store/tsconfig.build.json" },
+        { "path": "../../libs/http/tsconfig.build.json" },
+        { "path": "../../libs/router/tsconfig.build.json" },
+        { "path": "../../libs/socket/tsconfig.build.json" },
+        { "path": "../../libs/themes/tsconfig.build.json" },
+        { "path": "../../libs/webRTC/tsconfig.build.json" }
+    ]
+}

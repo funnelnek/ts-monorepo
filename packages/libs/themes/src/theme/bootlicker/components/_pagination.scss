@@ -1,0 +1,14 @@
+.pagination {
+    button.disabled {
+        color: #b3b3b3;
+    }
+
+    button, li {
+        border-radius: .4rem;
+
+        &:hover, &:hover a {
+            color: #fff;
+            background-color: #4070f4;
+        }
+    }
+}

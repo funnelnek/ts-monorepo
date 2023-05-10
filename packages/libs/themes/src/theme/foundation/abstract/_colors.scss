@@ -1,0 +1,68 @@
+$color-primary: #1F2545;
+$color-primary-dark: #091833;
+$color-primary-light: #3A4155;
+$color-secondary: #468C6C;
+$color-secondary-dark: #60BF89;
+$color-secondary-light: #60BF89;
+$color-teritary: #9CB8D2;
+$color-black: #000;
+$color-white: #fff;
+$color-surface-1: #FDFDFD;
+$color-surface-2: #FBFBFB;
+$color-surface-3: #FCFCFC;
+
+// Input Control
+$color-input-foreground: #000;
+$color-input-background: #FCFCFC;
+$color-input-border: #b6b6b6;
+$color-input-label: #b6b6b6;
+$color-input-extra: #FCFCFC;
+$color-input-disabled: #FCFCFC;
+$color-input-hover-foreground: $color-secondary-light;
+$color-input-hover-background: transparent;
+$color-input-focus-foreground: $color-secondary;
+$color-input-focus-background: transparent;
+$color-input-label-foreground: $color-input-label;
+$color-input-label-background: transparent;
+$color-input-label-hover-foreground: $color-input-hover-foreground;
+$color-input-label-hover-background: #000;
+$color-input-label-focus-foreground: $color-input-focus-foreground;
+$color-input-label-focus-background: #000;
+$color-input-border-focus-background: $color-secondary;
+$color-input-border-hover-background: $color-secondary-light;
+$color-input-outlined-background: transparent;
+
+
+
+:root {
+    --color-primary: #{$color-primary};
+    --color-primary-dark: #{$color-primary-dark};
+    --color-primary-light: #{$color-primary-light};
+    --color-secondary: #{$color-secondary};
+    --color-secondary-dark: #{$color-secondary-dark};
+    --color-secondary-light: #{$color-secondary-light};
+    --color-black: #{$color-black};
+    --color-white: #{$color-white};
+    --color-surface-1: #{$color-surface-1};
+    --color-surface-2: #{$color-surface-2};
+    --color-surface-3: #{$color-surface-3};
+    --color-input-foreground: #{$color-input-foreground};
+    --color-input-background: #{$color-input-background};
+    --color-input-border: #{$color-input-border};
+    --color-input-label: #{$color-input-label};
+    --color-input-extra: #{$color-input-extra};
+    --color-input-disabled: #{$color-input-disabled};
+    --color-input-hover-foreground: #{$color-input-hover-foreground};
+    --color-input-hover-background: #{$color-input-hover-background};
+    --color-input-focus-foreground: #{$color-input-focus-foreground};
+    --color-input-focus-background: #{$color-input-focus-background};
+    --color-input-label-hover-foreground: #{$color-input-label-hover-foreground};
+    --color-input-label-hover-background: #{$color-input-label-hover-background};
+    --color-input-label-focus-foreground: #{$color-input-label-focus-foreground};
+    --color-input-label-focus-background: #{$color-input-label-focus-background};
+    --color-input-outlined-background: #{$color-input-outlined-background};
+    --color-input-label-foreground: #{$color-input-label-foreground};
+    --color-input-label-background: #{$color-input-label-background};
+    --color-input-border-focus-background: #{$color-input-border-focus-background};
+    --color-input-border-hover-background: #{$color-input-border-hover-background};
+}

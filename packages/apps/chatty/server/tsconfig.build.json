@@ -1,0 +1,17 @@
+{
+    "extends": "../../../../tsconfig.build.json",
+    "compilerOptions": {
+        "composite": true,
+        "target": "ES2017",
+        "outDir": "dist",
+        "rootDir": "src"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "references": [
+        { "path": "../../../libs/common/tsconfig.build.json" },
+        { "path": "../core/tsconfig.build.json" }
+    ]
+}

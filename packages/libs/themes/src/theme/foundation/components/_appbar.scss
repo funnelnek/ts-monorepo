@@ -1,0 +1,16 @@
+.appbar {
+    display: flex;    
+    padding: .8rem 1.8rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .info {
+        display: flex;
+        align-items: center;
+
+        .details {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use "../../scss/foundation/utilities/dimension" as *;
+
+.drawer {
+    @extend %pane;
+
+    
+}

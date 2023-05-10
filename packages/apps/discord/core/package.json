@@ -1,0 +1,14 @@
+{
+  "name": "@funnelnek/discord-core",
+  "version": "1.0.0",
+  "description": "Discord core library",
+  "main": "dist/index.js",
+  "typings": "@types",
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc -p tsconfig.build.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

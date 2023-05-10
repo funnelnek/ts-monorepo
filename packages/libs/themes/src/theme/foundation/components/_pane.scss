@@ -1,0 +1,25 @@
+@use "../utilities/dimension" as *;
+
+.pane {
+    @extend %pane;
+    background-color: var(--color-surface-2);
+
+    &.left {
+        border-right: 1px solid var(--color-surface-3);
+    }
+
+    &.right {
+        border-left: 1px solid var(--color-surface-3);
+    }
+}
+
+.pane-header,
+.pane-footer {
+    display: flex;
+    height: 6rem;
+    align-items: center;
+}
+
+.pane-header {
+    box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, .16);    
+}

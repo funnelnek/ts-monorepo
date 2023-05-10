@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ES6",
-        "module": "ESNext",
+        "module": "ES2020",
         "moduleResolution": "node",
         "composite": true,
         "rootDir": ".",
@@ -19,11 +19,16 @@
         "emitDecoratorMetadata": true,
         "isolatedModules": true,
         "skipLibCheck": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "plugins": [
+            { "name": "typescript-plugin-css-modules" }
+        ]
     },
     "include": [
         "**/*.ts",
-        "**/*.tsx"
+        "**/*.tsx",
+        "**/*.module.scss",
+        "**/*.jpg",
     ],
     "exclude": [
         "node_modules",
@@ -33,15 +38,26 @@
         "**/*.test.ts",
         "**/*.cy.ts",
         "**/*.cy.tsx",
-        "**/jest.config.ts"
+        "**/jest.config.ts",
+        "**/*.d.ts"
     ],
     "references": [
+        { "path": "packages/libs/common/tsconfig.build.json" },        
+        { "path": "packages/libs/core/tsconfig.build.json" },
+        { "path": "packages/libs/http/tsconfig.build.json" },
+        { "path": "packages/libs/socket/tsconfig.build.json" },
         { "path": "packages/libs/i18n/tsconfig.build.json" },
         { "path": "packages/libs/ui/tsconfig.build.json" },
         { "path": "packages/libs/ioc/tsconfig.build.json" },
         { "path": "packages/libs/router/tsconfig.build.json" },
         { "path": "packages/libs/ecommerce-core/tsconfig.build.json" },
         { "path": "packages/apps/english-translator/tsconfig.build.json" },
-        { "path": "packages/apps/ecommerce/tsconfig.build.json" }
+        { "path": "packages/apps/chatty/tsconfig.build.json" },
+        { "path": "packages/apps/discord/tsconfig.build.json" },
+        { "path": "packages/apps/ecommerce/tsconfig.build.json" },
+        { "path": "packages/apps/host/tsconfig.build.json" }
+    ],
+    "files": [
+        "bundler.d.ts"
     ]
 }

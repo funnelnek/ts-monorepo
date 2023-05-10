@@ -1,0 +1,20 @@
+{
+    "extends": "../../../../tsconfig.build.json",
+    "compilerOptions": {
+        "composite": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "jsx": "react",
+        "declarationDir": "@types"
+    },    
+    "include": [
+        "src/**/*.ts", 
+        "src/**/*.tsx"
+    ],
+    "references": [
+        { "path": "../../../libs/ioc/tsconfig.build.json" },
+        { "path": "../../../libs/router/tsconfig.build.json" },
+        { "path": "../../../libs/themes/tsconfig.build.json" },
+        { "path": "../theme/tsconfig.build.json" }
+    ]
+}

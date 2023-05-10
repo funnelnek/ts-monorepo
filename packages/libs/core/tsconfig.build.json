@@ -1,0 +1,17 @@
+{
+    "extends": "../../../tsconfig.build.json",
+    "compilerOptions": {
+        "composite": true,
+        "outDir": "lib",
+        "rootDir": "src",
+        "declarationDir": "lib/@types"
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "references": [
+        { "path": "../common/tsconfig.build.json" },
+        { "path": "../ioc/tsconfig.build.json" },
+        { "path": "../router/tsconfig.build.json" }
+    ]
+}

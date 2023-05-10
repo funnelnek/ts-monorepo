@@ -1,0 +1,11 @@
+{
+    "name": "@funnelnek/socket-core",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "npm run clean && tsc -b tsconfig.build.json",
+        "clean": "rm -rf lib"
+    },
+    "dependencies": {
+        "react": "^18.2.0"
+    }
+}

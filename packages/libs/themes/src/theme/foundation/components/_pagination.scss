@@ -1,0 +1,29 @@
+li, 
+button, 
+.link, 
+.nav-link, 
+.button,
+.links, 
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.pagination, .links {
+    column-gap: 1.2rem;
+}
+
+.pagination {    
+    padding: 2rem;
+
+    li, button, .link, .nav-link, .button {        
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #666;
+        background-color: #f2f2f2;
+        cursor: pointer;
+    }
+}

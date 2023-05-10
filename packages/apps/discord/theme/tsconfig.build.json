@@ -1,0 +1,17 @@
+{
+    "extends": "../../../../tsconfig.build.json",
+    "compilerOptions": {
+        "composite": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "jsx": "react",
+        "declarationDir": "@types"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "references": [
+        { "path": "../../../libs/themes/tsconfig.build.json" }
+    ]
+}

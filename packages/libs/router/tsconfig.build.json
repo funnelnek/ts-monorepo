@@ -4,10 +4,16 @@
         "composite": true,
         "rootDir": "src",
         "outDir": "lib",
-        "declarationDir": "lib/@types"
+        "declarationDir": "@types"
     },
-    "include": ["src/**/*"],
+    "include": [
+        "src/**/*", 
+    ],
     "references": [
-        { "path": "../../libs/ioc/tsconfig.build.json" }
+        { "path": "../../libs/common/tsconfig.build.json" },
+        { "path": "../../libs/observable/tsconfig.build.json" },
+        { "path": "../../libs/ioc/tsconfig.build.json" },
+        { "path": "../../libs/http/tsconfig.build.json" },
+        { "path": "../../libs/themes/tsconfig.build.json" },
     ]
 }

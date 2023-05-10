@@ -1,0 +1,16 @@
+{
+    "extends": "../../../tsconfig.build.json",
+    "compilerOptions": {
+        "composite": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "declarationDir": "lib/@types",
+        "jsx": "react"
+    },
+    "include": ["src/**/*"],
+    "references": [
+        { "path": "../ioc/tsconfig.build.json" },
+        { "path": "../core/tsconfig.build.json" },
+        { "path": "../../apps/discord/tsconfig.build.json" }
+    ]
+}

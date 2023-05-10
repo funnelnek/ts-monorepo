@@ -1,0 +1,23 @@
+{
+  "name": "@funnelnek/discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "workspaces": [
+    "core",
+    "server",
+    "theme",
+    "client"
+  ],
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@funnelnek/router": "1.0.0",
+    "@funnelnek/themes": "1.0.0"
+  }
+}

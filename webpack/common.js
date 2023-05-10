@@ -1,56 +1,49 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const projectDir = path.resolve(__dirname, "..");
 
+const inProduction = process.env.NODE_ENV;
+
 module.exports = {
     context: projectDir,
-    entry: {},
     output: {
         clean: true
     },
-    modules: {
+    resolve: {
+        extensions: [".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs", ".json"],
+        plugins: [new TsconfigPathsPlugin()]
+    },
+    module: {
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /(?<!\.d)\.tsx?$/,
                 use: [
                     { loader: "babel-loader" },
-                    { loader: "ts-loader" }
+                    { 
+                        loader: "ts-loader", 
+                        options: {                            
+                            projectReferences: true
+                        } 
+                    }
                 ],
                 exclude: /node_modules/
             },
             {
+                test: /\.d\.ts$/,
+                use: "ignore-loader"
+            },            
+            {
+                test: /\.html$/,
+                use: "html-loader"
+            },
+            {
                 test: /\.jsx?$/,
                 use: [{ loader: "babel-loader" }]
-            },
+            },                        
             {
-                test: /\.s[ac]ss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    { loader: "css-loader" },
-                    { loader: "scss-loader" }
-                ]
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    { loader: "css-loader" },
-                ]
-            },
-            {
-                test: /\.module\.(s[ac]ss|css)$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    { loader: "css-loader" , options: { module: true }},
-                    { loader: "scss-loader" }
-                ]
-            },
-            {
-                test: /\.(jpe?g|png|svg)/,
-                use: "assets/resource"
-            }
+                test: /\.(jpe?g|png|svg|gif)/,
+                type: "asset/resource"
+            }            
         ]
     }
 }

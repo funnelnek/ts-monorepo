@@ -1,6 +1,6 @@
 import type { JestConfigWithTsJest } from 'ts-jest';
 import { pathsToModuleNameMapper } from 'ts-jest';
-import { compilerOptions } from './tsconfig.json' assert { type: "json" };
+import { compilerOptions } from './tsconfig.json';
 
 
 const config: JestConfigWithTsJest = {
@@ -11,7 +11,8 @@ const config: JestConfigWithTsJest = {
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: "./packages" }),
   transform: {
     '^.+\\.tsx?$': ["ts-jest", { tsconfig: "tsconfig.spec.json" }]
-  }
+  },
+  projects: ['<rootDir>', '<rootDir>/packages/**']
 };
 
 export default config;

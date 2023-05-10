@@ -2,11 +2,79 @@
     "folders": [
         {
             "name": "host",
-            "path": "src"
+            "path": "packages/apps/host"
         },
         {
-            "name": "english-translator",
-            "path": "packages/apps/english-translator"
+            "name": "http",
+            "path": "packages/libs/http"
+        },
+        {
+            "name": "discord",
+            "path": "packages/apps/discord"
+        },
+        {
+            "name": "discord-client",
+            "path": "packages/apps/discord/client"
+        },
+        {
+            "name": "cms",
+            "path": "packages/apps/cms"
+        },
+        {
+            "name": "threejs",
+            "path": "packages/apps/threejs"
+        },
+        {
+            "name": "observable",
+            "path": "packages/libs/observable"
+        },
+        {
+            "name": "discord-server",
+            "path": "packages/apps/discord/server"
+        },
+        {
+            "name": "discord-theme",
+            "path": "packages/apps/discord/theme"
+        },
+        {
+            "name": "discord-core",
+            "path": "packages/apps/discord/core"
+        },        
+        {
+            "name": "core",
+            "path": "packages/libs/core"
+        },
+        {
+            "name": "chatty",
+            "path": "packages/apps/chatty"
+        },
+        {
+            "name": "socket",
+            "path": "packages/libs/socket"
+        },
+        {
+            "name": "socket-core",
+            "path": "packages/libs/socket/core"
+        },
+        {
+            "name": "socket-server",
+            "path": "packages/libs/socket/server"
+        },
+        {
+            "name": "chatty-core",
+            "path": "packages/apps/chatty/core"
+        },
+        {
+            "name": "chatty-server",
+            "path": "packages/apps/chatty/server"
+        },
+        {
+            "name": "chatty-store",
+            "path": "packages/apps/chatty/store"
+        },
+        {
+            "name": "web-rtc",
+            "path": "packages/libs/webRTC"
         },
         {
             "name": "i18n",
@@ -17,16 +85,12 @@
             "path": "packages/libs/router"
         },
         {
-            "name": "ecommerce-core",
-            "path": "packages/libs/ecommerce-core"
-        },
+            "name": "common",
+            "path": "packages/libs/common"
+        },       
         {
-            "name": "ecommerce",
-            "path": "packages/apps/ecommerce"
-        },
-        {
-            "name": "ui",
-            "path": "packages/libs/ui"
+            "name": "themes",
+            "path": "packages/libs/themes"
         },
         {
             "name": "ioc",
@@ -39,5 +103,9 @@
                 "packages"
             ]
         }
-    ]
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "ioc",
+        "typescript.tsdk": "monorepo/node_modules/typescript/lib"
+    }
 }

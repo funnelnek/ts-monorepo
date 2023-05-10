@@ -1,0 +1,1 @@
+export const DiscordFeature  = import("discord");

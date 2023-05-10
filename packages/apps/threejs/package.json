@@ -1,0 +1,19 @@
+{
+    "name": "@funnelnek/threejs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "typings": "@types",
+    "scripts": {
+        "test": "jest",
+        "compile": "tsc -p tsconfig.build.json",
+        "serve": "webpack serve --config webpack/development.js",
+        "build": "webpack --config webpack/webpack.prod.config.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "three": "0.152.0"
+    }    
+}

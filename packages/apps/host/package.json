@@ -1,0 +1,25 @@
+{
+  "name": "@funnelnek/host",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack-dev-server --config webpack/development.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ignore-loader": "^0.1.2"
+  },
+  "types": "@types",
+  "dependencies": {
+    "@funnelnek/ioc": "1.0.0",
+    "@funnelnek/themes": "1.0.0",
+    "@funnelnek/http": "1.0.0",
+    "@funnelnek/observable": "1.0.0",
+    "@funnelnek/i18n": "1.0.0",
+    "@funnelnek/router": "1.0.0"
+  }
+}

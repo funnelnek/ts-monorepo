@@ -1,0 +1,13 @@
+@forward "color";
+@forward "font";
+
+$input-padding: 1rem 1.5rem;
+$input-border-width: .1rem;
+$input-border-radius: .5rem;
+
+
+:root {
+    --input-padding: #{$input-padding};
+    --input-border-width: #{$input-border-width};
+    --input-border-radius: #{$input-border-radius};
+}

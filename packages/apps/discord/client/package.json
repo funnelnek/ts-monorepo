@@ -1,0 +1,25 @@
+{
+  "name": "@funnelnek/discord-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",  
+  "workspaces": [
+    "core",
+    "theme",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc -p tsconfig.build.json",
+    "serve": "webpack serve --config webpack/development.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@funnelnek/router": "1.0.0",
+    "@funnelnek/themes": "1.0.0",
+    "@funnelnek/ioc": "1.0.0"
+  }
+}

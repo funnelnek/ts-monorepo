@@ -1,0 +1,1 @@
+export type IconVariant = "solid" | "regular" | "outlined" | "duotone" | "thin-outline";

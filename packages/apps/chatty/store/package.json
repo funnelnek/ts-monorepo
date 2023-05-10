@@ -1,0 +1,7 @@
+{
+    "name": "@funnelnek/chatty-store",
+    "version": "1.0.0",
+    "dependencies": {
+        "@funnelnek/chatty-core": "1.0.0"
+    }
+}

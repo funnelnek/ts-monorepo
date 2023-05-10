@@ -4,7 +4,14 @@
         "composite": true,
         "rootDir": "src",
         "outDir": "lib",
-        "declarationDir": "lib/@types"
+        "declarationDir": "lib/@types",
+        "jsx": "react"
     },
-    "include": ["src/**/*"]
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+    ],
+    "references": [
+        { "path": "../common/tsconfig.build.json" }
+    ]
 }

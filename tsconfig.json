@@ -2,31 +2,37 @@
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "paths": {
-      "@funnelnek/i18n": [
-        "libs/i18n/src/index.ts"
-      ],
-      "@funnelnek/lang-translator": [        
-        "apps/lang-translator/src/index.ts"
-      ],
-      "@funnelnek/ui": [
-        "libs/ui/src/index.ts"
-      ],
-      "@funnelnek/router": [
-        "libs/router/src/index.ts"
-      ],
-      "@funnelnek/ioc": [
-        "libs/ioc/src/index.ts"
-      ],
-      "@funnelnek/ecommerce": [
-        "libs/ecommerce/src/index.ts"
-      ],
-      "@funnelnek/ecommerce-core": [
-        "libs/ecommerce-core/src/index.ts"
-      ]
+      "@funnelnek/common": ["libs/common/src"],
+      "@funnelnek/http": ["libs/http/src"],
+      "@funnelnek/core": ["libs/core/src"],
+      "@funnelnek/ioc": ["libs/ioc/src"],
+      "@funnelnek/ioc/*": ["libs/ioc/src/*"],
+      "@funnelnek/socket-core": ["libs/socket/core/src"],
+      "@funnelnek/socket/*": ["libs/socket/*"],
+      "@funnelnek/socket": ["libs/socket/src"],
+      "@funnelnek/i18n": ["libs/i18n/src"],
+      "@funnelnek/themes": ["libs/themes/src"],
+      "@funnelnek/themes/*": ["libs/themes/src/*"],
+      "@funnelnek/router": ["libs/router/src"],
+      "@funnelnek/web-rtc": ["libs/webRTC/src"],      
+      "@funnelnek/chatty-core": ["apps/chatty/core/src"],
+      "@funnelnek/chatty-server": ["apps/chatty/server/src"],
+      "@funnelnek/chatty-store": ["apps/chatty/store/src"],
+      "@funnelnek/chatty": ["apps/chatty/src"],
+      "@funnelnek/chatty/*": ["apps/chatty/*"],
+      "@funnelnek/discord": ["apps/discord/src"],
+      "@funnelnek/discord/*": ["apps/discord/*"],
+      "@funnelnek/discord/theme": ["apps/discord/theme/src"],
+      "@funnelnek/discord-theme": ["apps/discord/theme/src"],
+      "@funnelnek/observable": ["libs/observable/src"],
+      "@funnelnek/cms": ["apps/cms"]
     }
   },
   "ts-node": {    
     "require": ["tsconfig-paths/register"],
-    "esm": true
+    "esm": true,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   }
 }

@@ -1,0 +1,16 @@
+@use "../utilities";
+
+ul,
+ol,
+.list {
+    position: relative;
+
+    .sub-list {
+       @extend %sub-menu;
+    }
+}
+
+li,
+.list-item {
+    position: relative;
+}

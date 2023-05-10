@@ -1,0 +1,20 @@
+.field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .border {
+        height: var(--input-border-height);
+    }
+}
+
+.control {    
+    width: inherit;
+    height: inherit;
+}
+
+input:focus + label,
+input:not(:placeholder-shown):not(:focus) + label {
+    top: 0;
+    font-size: 1.4rem;
+}

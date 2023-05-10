@@ -1,0 +1,11 @@
+$color-input-foreground: #333;
+$color-input-border: #aaa;
+$color-input-label: #2e2e2e;
+$color-input-label-foreground: $color-input-label;
+
+
+:root {   
+    --color-input-foreground: #{$color-input-foreground};
+    --color-input-border: #{$color-input-border};   
+    --color-input-label-foreground: #{$color-input-label-foreground};    
+}

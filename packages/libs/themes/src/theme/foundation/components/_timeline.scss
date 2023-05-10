@@ -1,0 +1,72 @@
+.timeline {
+    position: relative;
+    min-height: 15rem;
+
+
+    .line {
+        position: absolute;
+        top: -5rem;
+        left: calc(50% - 1px);
+        bottom: -5rem;
+        z-index: 2;
+        width: .2rem;
+        background-color: #000;
+
+        &::after,
+        &::before {
+            display: block;
+            position: absolute;
+            left: 50%;
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+            content: "";
+            background-color: #000;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    section {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        margin: 5rem 0rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 600ms ease;
+        align-items: center;
+        min-height: 30rem;
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+            transform: translateX(100%);
+        }
+
+        .bead {
+            display: block;
+            position: absolute;            
+            top: 20%;
+            left: 50%;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: #000;
+            transform: translateX(-50%);
+        }
+
+        .content {
+            width: calc(50% - 2rem);
+        }
+    }
+
+    .show:nth-child(n) {
+        transform: none;
+        opacity: 1;
+    }
+}

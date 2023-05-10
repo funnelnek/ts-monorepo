@@ -1,0 +1,17 @@
+@use "pane";
+
+.drawer {
+    @extend .pane;
+    width: 0rem;
+    transition: width .25s ease-in-out;
+    flex-shrink: 0;
+    flex-grow: 0;
+    
+    &.minimize {
+        width: 6rem;
+    }
+
+    &.open {
+        width: 30rem;
+    }
+}

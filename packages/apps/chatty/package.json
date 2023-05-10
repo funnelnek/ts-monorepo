@@ -1,0 +1,21 @@
+{
+  "name": "@funnelnek/chatty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "core",
+    "server"
+  ],
+  "scripts": {
+    "test": "jest",
+    "dev:serve": "webpack-dev-server --config webpack/development.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@funnelnek/rtc": "1.0.0",
+    "@funnelnek/ui": "1.0.0"
+  }
+}

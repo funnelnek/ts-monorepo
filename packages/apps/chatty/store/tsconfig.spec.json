@@ -1,0 +1,9 @@
+{
+    "extends": "../../../../tsconfig.spec.json",
+    "compilerOptions": {
+        "composite": true,
+        "outDir": "lib",
+        "rootDir": "src"
+    },
+    "include": ["src/**/*.spec.ts"]    
+}

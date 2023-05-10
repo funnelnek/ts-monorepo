@@ -1,5 +1,6 @@
-import { CanActivateGuard } from "../contracts/CanActivateGuard";
+import { Type } from "@funnelnek/ioc";
+import { CanActivate } from "../contracts";
 import { CanActivateFn } from "./CanActivateFn";
 
 
-export type CanActivateHandler = CanActivateFn | CanActivateGuard;
+export type CanActivateHandler = Type<CanActivate> | CanActivateFn;

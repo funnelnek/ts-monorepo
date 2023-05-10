@@ -1,0 +1,41 @@
+import { EventEmitter } from "@funnelnek/common";
+import { CalendarMode } from "../types";
+import { immerable } from "immer";
+import { ICalendarDate } from "./ICalendarDate";
+import { FormEvent, MouseEvent } from "react";
+
+export interface ICalendar extends EventEmitter {
+    day: number;
+    year: number;
+    date: number;
+    week: number;
+    month: string;
+    dayOfWeek: string;
+    currentDay: number;
+    currentDayOfWeek: string;
+    currentYear: number;
+    currentDate: number;
+    currentMonth: string;
+    dates: ICalendarDate[];
+    mode: CalendarMode;
+    target: Date;
+    format: string;
+    next(): void;
+    previous(): void;
+    nextWeek(): void;
+    previousWeek(): void;
+    nextMonth(): void;
+    previousMonth(): void;
+    nextYear(): void;
+    previousYear(): void;
+    goto(date: Date): void;
+    goto(date: string): void;
+    goto(date: string | Date): void;
+    onGoToChange(event: FormEvent<HTMLInputElement>): void;
+    onGoTo(): void;
+    getPreviousMonthLastDates(): ICalendarDate[];    
+    getNextMonthFirstDates(): ICalendarDate[];
+    isLeapYear(): boolean;
+    today(): void;
+    [immerable]: boolean;
+}

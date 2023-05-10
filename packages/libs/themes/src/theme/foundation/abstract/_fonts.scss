@@ -1,0 +1,25 @@
+$typescale: 1.25;
+$default-font-family: Poppins;
+$font-base-unit: 62.5%;
+$font-headline: Poppins;
+$font-subtitle: Poppins;
+$font-body: Poppins;
+$font-caption: Poppins;
+$font-overline: Poppons;
+
+// Input Control
+$font-input-family: Poppins;
+$font-input-size: 1.6rem;
+$font-input-weight: 400;
+$font-input-label-size: 1.8rem;
+$font-input-label-weight: 500;
+
+
+:root {
+    --default-font-family: #{$default-font-family};
+    --font-input-family: #{$font-input-family};
+    --font-input-size: #{$font-input-size};
+    --font-input-weight: #{$font-input-weight};
+    --font-input-label-size: #{$font-input-label-size};
+    --font-input-label-weight: #{$font-input-label-weight};
+}

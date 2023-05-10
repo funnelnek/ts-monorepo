@@ -1,5 +1,5 @@
 import { CanActivateFn } from "../types/CanActivateFn";
 
-export interface CanActivateGuard {
+export interface CanActivate {
     canActivate: CanActivateFn;
 }

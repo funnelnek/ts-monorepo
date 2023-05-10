@@ -1,0 +1,13 @@
+a.nav-link {
+    display: flex;    
+    width: 100%;
+    align-items: center;
+   
+    .label {
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: var(--color-surface-1);
+    }
+}

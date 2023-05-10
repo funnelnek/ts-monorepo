@@ -1,0 +1,17 @@
+@use "../abstract" as *;
+
+.navigation {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    &.vertical {
+        flex-direction: column;
+        height: 100%;
+        padding-top: 3rem;
+    }
+}
+
+.navlink {
+    position: relative;
+}
